@@ -121,14 +121,14 @@
         NSString *afterWord = @"";
         int i = self.cursorLocation-1;
         int j = self.cursorLocation;
-        if (i>0) {
+        if (i>0 && i<textField.text.length) {
             while (![self isASpecialCharacter:[NSString stringWithFormat:@"%C", [textFieldText characterAtIndex:i]]] && i>0) {
             unichar character = [textFieldText characterAtIndex:i];
             beforeWord = [beforeWord stringByAppendingString:[NSString stringWithFormat:@"%C", character]];
             i--;
             }
         }
-        if (j<textField.text.length) {
+        if (j<textField.text.length && j>0) {
             while (![self isASpecialCharacter:[NSString stringWithFormat:@"%C", [textFieldText characterAtIndex:j]]] && j<textField.text.length-1) {
             unichar character = [textFieldText characterAtIndex:j];
             afterWord = [afterWord stringByAppendingString:[NSString stringWithFormat:@"%C", character]];
