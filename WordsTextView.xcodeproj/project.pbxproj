@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F906D7F1A23A25900CD0866 /* WordsTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F906D7E1A23A25900CD0866 /* WordsTextField.m */; };
 		3FD745971A1AA44C00A2DF01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD745961A1AA44C00A2DF01 /* main.m */; };
 		3FD7459A1A1AA44C00A2DF01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD745991A1AA44C00A2DF01 /* AppDelegate.m */; };
 		3FD7459D1A1AA44C00A2DF01 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD7459C1A1AA44C00A2DF01 /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		3FD745A21A1AA44C00A2DF01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD745A11A1AA44C00A2DF01 /* Images.xcassets */; };
 		3FD745A51A1AA44C00A2DF01 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FD745A31A1AA44C00A2DF01 /* LaunchScreen.xib */; };
 		3FD745B11A1AA44C00A2DF01 /* WordsTextViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD745B01A1AA44C00A2DF01 /* WordsTextViewTests.m */; };
+		3FD745BC1A1AA49200A2DF01 /* WordsTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD745BB1A1AA49200A2DF01 /* WordsTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F906D7D1A23A25900CD0866 /* WordsTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordsTextField.h; sourceTree = "<group>"; };
+		3F906D7E1A23A25900CD0866 /* WordsTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordsTextField.m; sourceTree = "<group>"; };
 		3FD745911A1AA44C00A2DF01 /* WordsTextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsTextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD745951A1AA44C00A2DF01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FD745961A1AA44C00A2DF01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,8 @@
 		3FD745AA1A1AA44C00A2DF01 /* WordsTextViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordsTextViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD745AF1A1AA44C00A2DF01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FD745B01A1AA44C00A2DF01 /* WordsTextViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordsTextViewTests.m; sourceTree = "<group>"; };
+		3FD745BA1A1AA49200A2DF01 /* WordsTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordsTextView.h; sourceTree = "<group>"; };
+		3FD745BB1A1AA49200A2DF01 /* WordsTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordsTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,10 @@
 				3FD745991A1AA44C00A2DF01 /* AppDelegate.m */,
 				3FD7459B1A1AA44C00A2DF01 /* ViewController.h */,
 				3FD7459C1A1AA44C00A2DF01 /* ViewController.m */,
+				3FD745BA1A1AA49200A2DF01 /* WordsTextView.h */,
+				3FD745BB1A1AA49200A2DF01 /* WordsTextView.m */,
+				3F906D7D1A23A25900CD0866 /* WordsTextField.h */,
+				3F906D7E1A23A25900CD0866 /* WordsTextField.m */,
 				3FD7459E1A1AA44C00A2DF01 /* Main.storyboard */,
 				3FD745A11A1AA44C00A2DF01 /* Images.xcassets */,
 				3FD745A31A1AA44C00A2DF01 /* LaunchScreen.xib */,
@@ -220,8 +230,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FD7459D1A1AA44C00A2DF01 /* ViewController.m in Sources */,
+				3FD745BC1A1AA49200A2DF01 /* WordsTextView.m in Sources */,
 				3FD7459A1A1AA44C00A2DF01 /* AppDelegate.m in Sources */,
 				3FD745971A1AA44C00A2DF01 /* main.m in Sources */,
+				3F906D7F1A23A25900CD0866 /* WordsTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +424,7 @@
 				3FD745B61A1AA44C00A2DF01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FD745B71A1AA44C00A2DF01 /* Build configuration list for PBXNativeTarget "WordsTextViewTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +433,7 @@
 				3FD745B91A1AA44C00A2DF01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
