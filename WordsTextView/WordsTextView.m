@@ -121,15 +121,19 @@
         NSString *afterWord = @"";
         int i = self.cursorLocation-1;
         int j = self.cursorLocation;
-        while (![self isASpecialCharacter:[NSString stringWithFormat:@"%C", [textViewText characterAtIndex:i]]] && i>0) {
+        if (i>0) {
+            while (![self isASpecialCharacter:[NSString stringWithFormat:@"%C", [textViewText characterAtIndex:i]]] && i>0) {
             unichar character = [textViewText characterAtIndex:i];
             beforeWord = [beforeWord stringByAppendingString:[NSString stringWithFormat:@"%C", character]];
             i--;
+            }
         }
-        while (![self isASpecialCharacter:[NSString stringWithFormat:@"%C", [textViewText characterAtIndex:j]]] && j<textView.text.length-1) {
+        if (j<textView.text.length) {
+            while (![self isASpecialCharacter:[NSString stringWithFormat:@"%C", [textViewText characterAtIndex:j]]] && j<textView.text.length-1) {
             unichar character = [textViewText characterAtIndex:j];
             afterWord = [afterWord stringByAppendingString:[NSString stringWithFormat:@"%C", character]];
             j++;
+            }
         }
         beforeWord = [self reverseWord:beforeWord];
         [self checkWord:beforeWord];
